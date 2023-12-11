@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Barlow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+
+html, body {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.7em;
+    background-color: beige;
+}
+
+a {
+    color: darkred;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Utility Classes */
+
+.container {
+    margin: auto;
+    max-width: 1100px;  
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.text-primary {
+    color: orangered;
+}
+
+.text-primary2 {
+    color: #333;
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bolder;
+    color: orangered;
+    background: beige;
+    padding: 13px 20px;
+    border: 2px solid orangered;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: beige;
+    background: orangered;
+    border: 2px solid beige;
+    border-radius: 15px;
+}
+
+/*
+
+.btn-light {
+    background-color: goldenrod;
+    color: darkred;
+
+*/
+
+.bg-dark {
+    background: #333;
+    color: orangered;
+}
+
+.bg-light {
+    background: orangered;
+    color: beige;
+}
+
+.bg-primary {
+    background: beige;
+    color: orangered;
+}
+
+.clr {
+    clear: both;
+}
+
+.l-heading {
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+
+/* Padding */
+
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+
+/* Navbar */
+
+#navbar {
+    background: #333;
+    color: orangered;
+    overflow: auto;
+}
+
+#navbar a {
+    color: orangered;
+}
+
+#navbar .logo a {
+    font-family: 'Aguafina Script', sans-serif;
+}
+
+#navbar .logo {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover, 
+#navbar ul li a.current {
+    background: orangered;
+    color: beige;
+}
+
+/* Showcase */
+
+#showcase {
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+
+#showcase .showcase-content{
+    color: beige;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+    font-weight: bolder;
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+/* Home Infor */
+
+#home-info {
+    height: 450px;
+}
+
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('../img/pexels-pixabay-53464.jpg') no-repeat center center/cover;
+    min-height: 100%;
+}
+
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+#home-info .info-content p {
+    padding-bottom: 30px;
+}
+
+/* Features */
+
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 30px;
+}
+
+/* About Info */
+
+#about-info {
+    padding: 25px 15px;
+}
+
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+/* Testimonials */
+
+#testimonials {
+    height: 100%;
+    background: url('../img/pexels-thorsten-technoman-338504.jpg') no-repeat center center/cover;
+    padding-top: 100px;
+}
+
+#testimonials h2 {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#testimonials .testimonial {
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    opacity: 0.9;
+    background-color: orangered;
+    color: beige;
+}
+
+#testimonials .testimonial img {
+    width: 100px;
+    border-radius: 50%;   
+    float: left;
+    margin-right: 20px; 
+}
+
+/* Footer */
+
+/* Contact Form */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.contact-btn {
+    color: beige;
+    background: orangered;
+    border: 2px solid beige;
+}
+
+.contact-btn:hover {
+    color: orangered;
+    background: beige;
+    border: 2px solid orangered;
+}
+
+
+#main-footer {
+    text-align: center;
+    background: #333;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: orangered;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
